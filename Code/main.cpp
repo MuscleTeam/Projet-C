@@ -13,9 +13,8 @@ void lecture_liste(std::list<string>);
 void suppresion_commentaires(std::list<string>);
 
 
-
-std::list<string> liste_ligne;
-std::list<string> liste_ligne_sans_commentaire;
+list<string> liste_ligne;
+list<string> liste_ligne_sans_commentaire;
 
 int main(void)
 {
