@@ -25,7 +25,7 @@ int main(void)
 
 }
 
-string choix_fichier(void) // permet de récupérer le chemin d'accé de notre fichier
+string choix_fichier(void) // permet de récupérer le chemin d'accès de notre fichier
 {
     string chemin_fichier;
     cout << "Faites glisser le fichier à ouvrir dans le Terminal : ";
