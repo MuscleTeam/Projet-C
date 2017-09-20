@@ -11,6 +11,7 @@ void Lecture_fichier(string);
 string choix_fichier(void);
 void lecture_liste(std::list<string>);
 void suppresion_commentaires(std::list<string>);
+void decoupage_mots(list<string>);
 
 
 list<string> liste_ligne;
@@ -21,7 +22,8 @@ int main(void)
     cout << endl;
     Lecture_fichier(choix_fichier());
     suppresion_commentaires(liste_ligne);
-    lecture_liste(liste_ligne_sans_commentaire);
+    //lecture_liste(liste_ligne_sans_commentaire);
+    decoupage_mots(liste_ligne_sans_commentaire);
 
 }
 
@@ -78,6 +80,24 @@ void suppresion_commentaires(std::list<string> ma_liste)
         i++;
         liste_ligne_sans_commentaire.push_back(ligne.substr(0,found));
     }
+}
+
+void decoupage_mots(list<string> ma_liste)
+{
+    list<string>::iterator i = ma_liste.begin();
+    string texte = "";
+    int y = 0;
+    int x = 0;
+
+    while(i != ma_liste.end())
+    {
+        string ligne = *i;
+        texte = texte + ligne;
+        i++;
+    }
+
+
+
 }
 
 
